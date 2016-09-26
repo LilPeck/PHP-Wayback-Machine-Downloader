@@ -4,16 +4,18 @@
 ## inspired by https://gist.github.com/tuanle/7749c5af3cf2ce5e43df
 ## Questions: LilPeck@gmail.com
 ## CONSTRUCT YOUR JSON URL AND DOWNLOAD THE JSON OUTPUT TO A LOCAL FILE. TEST YOUR JSON URL IN BROWSER FIRST!
+## json URL will look something like this:
+## http://web.archive.org/cdx/search/cdx?url=stopcirc.com&matchType=domain&from=20150525021959&to=20160331174228&output=json&fl=timestamp,original&fastLatest=true&filter=statuscode:200&collapse=original&limit=100
 
-$domain = 'google.com'; //type the url you want without http:// and without https://
+$domain = 'stopcirc.com'; //type the url you want without http:// and without https://
 
 ## GO TO https://web.archive.org/web/ AND FIND THE WEBSITE YOU WANT TO DOWNLOAD.
 ## SELECT A SPECIFIC DATE AND LOOK AT ITS URL: https://web.archive.org/web/19981111184551/http://google.com/
 ## COPY THE TIMESTAMP FROM THE DATE STRING:
-$from = '19981111184551';
+$from = '20150525021959';
 
 ## FIND A LATER DATE FOR THE SAME PAGE AND COPY THE TIMESTAMP FROM ITS URL. (IT IS RECOMMENDED TO KEEP YOUR TIME SPAN FAIRLY NARROW TO AVOID OVERUSE OF RESOURCES.)
-$to = '19990422191353';
+$to = '20160331174228';
 
 ## GOOD IDEA TO LIMIT THE RESULTS TO AVOID OVERUSE OF RESOURCES
 $limit = '100';
