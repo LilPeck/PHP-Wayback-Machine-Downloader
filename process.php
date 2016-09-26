@@ -2,9 +2,10 @@
 ## process.php
 ## PART 2 OF PHP WAYBACK MACHINE DOWNLOADER - QUESTIONS: LilPeck@gmail.com
 ## inspired by https://gist.github.com/tuanle/7749c5af3cf2ce5e43df
+## rawlist.json is parsed for urls in this format: http://web.archive.org/web/20150817154121id_/http://www.stopcirc.com/vincent/vulnerability_of_men.html
 
-$domain = "google.com"; //folders with the domain name will be created inside the same folder this script runs in
-$domainurl = "http://google.com";
+$domain = "stopcirc.com"; //folders with the domain name will be created inside the same folder this script runs in
+$domainurl = "http://www.stopcirc.com";
 $webarchive = "http://web.archive.org/web/";
 $fileext = array('.htm','.html','.png','.jpg','.jpeg','.gif','.pdf','.xml','.ico'); // IF YOU WANT TO LIMIT FILE EXTENSIONS
 $myFolderArray =("");
