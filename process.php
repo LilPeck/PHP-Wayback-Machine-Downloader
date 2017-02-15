@@ -5,7 +5,7 @@
 ## rawlist.json is parsed for urls in this format: http://web.archive.org/web/20150817154121id_/http://www.stopcirc.com/vincent/vulnerability_of_men.html
 
 $domain = "stopcirc.com"; //folders with the domain name will be created inside the same folder this script runs in
-$domainurl = "http://www.stopcirc.com";
+$domainurl = "http://www.stopcirc.com"; // Be sure to use the canonical url the way Archive.org has saved it, with/without www.
 $webarchive = "http://web.archive.org/web/";
 $fileext = array('.htm','.html','.png','.jpg','.jpeg','.gif','.pdf','.xml','.ico'); // IF YOU WANT TO LIMIT FILE EXTENSIONS
 $myFolderArray =("");
